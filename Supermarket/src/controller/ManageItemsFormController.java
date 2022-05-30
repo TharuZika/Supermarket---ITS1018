@@ -41,6 +41,7 @@ public class ManageItemsFormController {
     }
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
+        System.out.println("hell0");
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
