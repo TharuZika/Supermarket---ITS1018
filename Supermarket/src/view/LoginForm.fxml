@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginContext" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.94" pickOnBounds="true">
+         <image>
+            <Image url="@assests/background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="6.0" layoutY="8.0" opacity="0.4" prefHeight="786.0" prefWidth="375.0" style="-fx-background-color: #006eff; -fx-background-radius: 10;" />
+      <JFXTextField focusColor="#00ffeb" labelFloat="true" layoutX="54.0" layoutY="335.0" prefHeight="41.0" prefWidth="270.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField focusColor="#00ffeb" labelFloat="true" layoutX="54.0" layoutY="414.0" prefHeight="41.0" prefWidth="270.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="527.0" onAction="#btnLoginOnAction" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #006eff; -fx-background-radius: 8;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow height="35.83" radius="20.38" spread="0.05" width="47.69" />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="480.0" fitWidth="600.0" layoutX="392.0" layoutY="182.0" pickOnBounds="true">
+         <image>
+            <Image url="@assests/shopingCartForLogin.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0033ff" layoutX="81.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back">
+         <font>
+            <Font name="ROGFontsv1.6-Regular" size="34.0" />
+         </font>
+      </Text>
+      <Text fill="#0095d0" layoutX="673.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARKET">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text layoutX="597.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Point Of Sale System">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#0033ff" layoutX="552.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUPER">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

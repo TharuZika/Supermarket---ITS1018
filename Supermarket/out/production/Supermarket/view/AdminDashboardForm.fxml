@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminContext" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@assests/background.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="413.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnReports" layoutX="189.0" layoutY="341.0" onMouseClicked="#navigateUi" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" text="Manage Reports" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDetails" layoutX="500.0" layoutY="341.0" onMouseClicked="#navigateUi" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" text="View Details" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnItems" layoutX="805.0" layoutY="341.0" onMouseClicked="#navigateUi" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" text="Manage Items" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="50.0" layoutY="297.0" prefHeight="4.0" prefWidth="1093.0" />
+      <Separator layoutX="50.0" layoutY="587.0" prefHeight="4.0" prefWidth="1093.0" />
+      <FontAwesomeIconView fill="#005fff" glyphName="SIGN_OUT" layoutX="16.0" layoutY="56.0" onMouseClicked="#logoutClicked" size="50" />
+   </children>
+</AnchorPane>

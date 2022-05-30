@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane fx:id="reportsContext" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.ManageReportsFormController"
+            prefHeight="800.0" prefWidth="1200.0">
+    <children>
+        <Text layoutX="413.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Details">
+            <font>
+                <Font name="System Bold" size="44.0" />
+            </font>
+        </Text>
+        <FontAwesomeIconView fill="#0858ff" glyphName="ARROW_CIRCLE_LEFT" layoutX="17.0" layoutY="57.0" onMouseClicked="#backClicked" size="50" />
+    </children>
+
+</AnchorPane>
