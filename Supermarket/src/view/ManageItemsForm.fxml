@@ -39,12 +39,12 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtTextSize" labelFloat="true" layoutX="876.0" layoutY="191.0" prefHeight="31.0" prefWidth="254.0" promptText="Pack Size :">
+      <JFXTextField fx:id="txtPackSize" labelFloat="true" layoutX="876.0" layoutY="191.0" prefHeight="31.0" prefWidth="254.0" promptText="Pack Size :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="60.0" layoutY="294.0" prefHeight="31.0" prefWidth="254.0" promptText="Unit Price :">
+      <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="60.0" layoutY="294.0" prefHeight="31.0" prefWidth="254.0" promptText="Unit Price :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

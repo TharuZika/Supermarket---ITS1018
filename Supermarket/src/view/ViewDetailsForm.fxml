@@ -27,17 +27,17 @@
       <FontAwesomeIconView fx:id="btnCustomers" glyphName="GROUP" layoutX="211.0" layoutY="435.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="100" />
       <FontAwesomeIconView fx:id="btnOrders" glyphName="CART_ARROW_DOWN" layoutX="876.0" layoutY="435.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="110" />
       <FontAwesomeIconView fx:id="btnItems" glyphName="LIST_UL" layoutX="527.0" layoutY="431.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="100" />
-      <Text fx:id="lblCustomers" layoutX="165.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+      <Text fx:id="lblCustomers" layoutX="164.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fx:id="lblItems" layoutX="481.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+      <Text fx:id="lblItems" layoutX="480.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fx:id="lblOrders" layoutX="837.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+      <Text fx:id="lblOrders" layoutX="836.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
