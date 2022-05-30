@@ -1,6 +1,7 @@
 package controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -28,6 +29,10 @@ public class ManageItemsFormController {
     public TableColumn colPackSize;
     public TableColumn colUnitPrice;
     public TableColumn colQtyOnHand;
+    public JFXTextField txtQtyOnHand;
+    public JFXTextField txtTextSize;
+    public JFXTextField txtDescription;
+    public JFXTextField txtItemCode;
 
     public void backClicked(MouseEvent event) throws IOException {
         URL resource = this.getClass().getResource("/view/AdminDashboardForm.fxml");
@@ -41,7 +46,6 @@ public class ManageItemsFormController {
     }
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
-        System.out.println("hell0");
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {

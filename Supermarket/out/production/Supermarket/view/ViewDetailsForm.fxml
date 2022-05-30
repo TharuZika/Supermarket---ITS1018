@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<AnchorPane fx:id="detailsContext" xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ViewDetailsFormController"
-            prefHeight="800.0" prefWidth="1200.0">
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="detailsContext" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewDetailsFormController">
     <children>
-        <Text layoutX="413.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Details">
+        <ImageView fitHeight="800.0" fitWidth="1200.0" opacity="0.5" pickOnBounds="true">
+            <image>
+                <Image url="@assests/background.jpg" />
+            </image>
+        </ImageView>
+        <Text layoutX="473.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Details">
             <font>
                 <Font name="System Bold" size="44.0" />
             </font>
         </Text>
-        <FontAwesomeIconView fill="#0858ff" glyphName="ARROW_CIRCLE_LEFT" layoutX="17.0" layoutY="57.0" onMouseClicked="#backClicked" size="50" />
+        <FontAwesomeIconView fill="#0858ff" glyphName="ARROW_CIRCLE_LEFT" layoutX="17.0" layoutY="57.0" onMouseClicked="#backClicked" size="50">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="btnCustomers" glyphName="GROUP" layoutX="211.0" layoutY="435.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="100" />
+      <FontAwesomeIconView fx:id="btnOrders" glyphName="CART_ARROW_DOWN" layoutX="876.0" layoutY="435.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="110" />
+      <FontAwesomeIconView fx:id="btnItems" glyphName="LIST_UL" layoutX="527.0" layoutY="431.0" onMouseClicked="#navigate" onMouseEntered="#onMouseAnimation" onMouseExited="#offMouseAnimation" size="100" />
+      <Text fx:id="lblCustomers" layoutX="165.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblItems" layoutX="481.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblOrders" layoutX="837.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" textAlignment="CENTER" visible="false" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
     </children>
 
 </AnchorPane>
